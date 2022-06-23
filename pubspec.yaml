@@ -1,0 +1,18 @@
+name: pubspec_builder
+description: A builder for extracting the contents of pubspec.yaml into code.
+version: 1.0.0
+homepage: https://github.com/blendthink/pubspec-builder
+repository: https://github.com/blendthink/pubspec-builder
+documentation: https://github.com/blendthink/pubspec-builder
+issue_tracker: https://github.com/blendthink/pubspec-builder/issues
+
+environment:
+  sdk: '>=2.17.3 <3.0.0'
+
+dependencies:
+  build: ^2.3.0
+  build_config: ^1.0.0 # Not imported in code, but used to constrain `build.yaml` requirements
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.16.0

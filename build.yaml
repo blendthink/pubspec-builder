@@ -1,0 +1,19 @@
+# see https://pub.dev/packages/build_config
+builders:
+  pubspec_builder:
+    import: 'package:pubspec_builder/pubspec_builder.dart'
+    builder_factories:
+      - 'builder'
+    build_extensions:
+      ^pubspec.yaml:
+        - 'lib/gen/pubspec.dart'
+    auto_apply: 'root_package'
+    build_to: 'source'
+    defaults:
+      options:
+        output: 'lib/gen/pubspec.dart'
+      generate_for:
+        include:
+          - 'pubspec.yaml'
+        exclude:
+          - 'lib/**'
